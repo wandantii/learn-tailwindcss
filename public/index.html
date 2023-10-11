@@ -12,20 +12,27 @@
             spacing: {
               13: '3.25rem',
             },
+            fontFamily: {
+              inter: ['inter'],
+            },
+            colors: {
+              wanda: '#32a832',
+              berlian: '#6737ad',
+            },
           },
         },
       };
     </script>
     <title>Coba TailwindCSS</title>
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
-    <style type="text/tailwindcss">
+    <!-- <style type="text/tailwindcss">
       * {
         border: 1px solid red;
       }
-    </style>
+    </style> -->
   </head>
   <body>
-    <h1 class="text-5xl font-bold">Hello Wanda</h1>
+    <span class="text-5xl font-bold bg-gradient-to-r from-blue-500 to-teal-300 bg-clip-text text-transparent">Hello Wanda</span>
     <a href="#" class="bg-green-300 p-3 text-white inline-block m-3 rounded shadow hover:bg-green-900">Button</a>
     <p class="m-3 bg-yellow-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi optio aspernatur magni adipisci minus dolor eum dignissimos distinctio, cupiditate error in molestiae tempora maxime, cumque inventore ratione asperiores iste?</p>
     
@@ -38,16 +45,21 @@
     <section class="mb-10">
       <h2>Sizing</h2>
       <div class="w-32 h-32">Kotak 1</div>
-      <div class="max-w-xs min-h-screen">Kotak 2</div>
+      <div class="max-w-xs min-h-screen bg-gradient-to-br from-indigo-500 via-red-400 to-yellow-300">Kotak 2</div>
     </section>
 
-    <section class="mb-10 font-serif">
-      <h2 class="mb-4">Belajar mengenai typography</h2>
-      <div class="mb-4">by Wanda Berlian 14 Maret 2023</div>
-      <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem sint ipsam laboriosam, repellendus delectus dicta. Dolore, sed nobis. Quaerat velit odio facere explicabo illum. Qui aut reiciendis eius eum!</p>
-      <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium cum aliquid expedita nulla sed officia cupiditate repellat quasi amet minus obcaecati accusantium labore nam dolorem, fugit molestiae velit tempora eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolore soluta sapiente alias sed temporibus illum corporis repudiandae tempora! Asperiores beatae veniam consequatur adipisci magnam sapiente eveniet a laudantium in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eveniet ipsum minima animi, delectus dicta dolore magni, blanditiis possimus eum, ut aperiam minus id exercitationem? Beatae non dolore voluptates commodi!</p>
-      <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium cum aliquid expedita nulla sed officia cupiditate repellat quasi amet minus obcaecati accusantium labore nam dolorem, fugit molestiae velit tempora eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolore soluta sapiente alias sed temporibus illum corporis repudiandae tempora! Asperiores beatae veniam consequatur adipisci magnam sapiente eveniet a laudantium in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eveniet ipsum minima animi, delectus dicta dolore magni, blanditiis possimus eum, ut aperiam minus id exercitationem? Beatae non dolore voluptates commodi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum corporis eos commodi rerum iusto, quae voluptates officia sunt ea qui esse pariatur consectetur dolorum accusantium magni, possimus expedita, soluta consequuntur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, natus sunt necessitatibus molestias magnam odit eos eum. Delectus quas beatae aliquam. Quod odio, maiores rerum beatae ipsam illo est nobis.</p>
-
+    <section class="mb-10 font-inter max-w-4xl mx-auto">
+      <h2 class="mb-4 text-4xl font-bold">Belajar mengenai typography</h2>
+      <blockquote class="mb-4 italic font-thin text-xl text-gray-500">by Wanda Berlian 14 Maret 2023</blockquote>
+      <p class="mb-4 font-mono bg-slate-800 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem sint ipsam laboriosam, repellendus delectus dicta. Dolore, sed nobis. Quaerat velit odio facere explicabo illum. Qui aut reiciendis eius eum!</p>
+      <p class="mb-4 underline bg-berlian">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium cum aliquid expedita nulla sed officia cupiditate repellat quasi amet minus obcaecati accusantium labore nam dolorem, fugit molestiae velit tempora eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolore soluta sapiente alias sed temporibus illum corporis repudiandae tempora! Asperiores beatae veniam consequatur adipisci magnam sapiente eveniet a laudantium in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eveniet ipsum minima animi, delectus dicta dolore magni, blanditiis possimus eum, ut aperiam minus id exercitationem? Beatae non dolore voluptates commodi!</p>
+      <p class="mb-4 bg-wanda">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium cum aliquid expedita nulla sed officia cupiditate repellat quasi amet minus obcaecati accusantium labore nam dolorem, fugit molestiae velit tempora eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolore soluta sapiente alias sed temporibus illum corporis repudiandae tempora! Asperiores beatae veniam consequatur adipisci magnam sapiente eveniet a laudantium in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eveniet ipsum minima animi, delectus dicta dolore magni, blanditiis possimus eum, ut aperiam minus id exercitationem? Beatae non dolore voluptates commodi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum corporis eos commodi rerum iusto, quae voluptates officia sunt ea qui esse pariatur consectetur dolorum accusantium magni, possimus expedita, soluta consequuntur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, natus sunt necessitatibus molestias magnam odit eos eum. Delectus quas beatae aliquam. Quod odio, maiores rerum beatae ipsam illo est nobis.</p>
     </section>
+
+    <div class="max-w-xl h-96 bg-slate-200">
+
+    </div>
+    
+    <div class="mb-96"></div>
   </body>
 </html>
