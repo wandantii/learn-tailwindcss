@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <script>
       tailwind.config = {
         darkMode: 'class',
         theme: {
@@ -34,17 +34,16 @@
           },
         },
       };
-    </script>
+    </script> -->
     <title>Coba TailwindCSS</title>
-    <!-- <link rel="stylesheet" href="css/style.css" /> -->
-    <style type="text/tailwindcss">
+    <!-- <style type="text/tailwindcss">
       .body {
         border: 1px solid red;
       }
       #toggle:checked ~ label div.toggle-circle {
         @apply translate-x-3;
       }
-    </style>
+    </style> -->
   </head>
   <body class="dark:bg-slate-800 dark:text-slate-200">
     <span class="text-5xl font-bold bg-gradient-to-r from-blue-500 to-teal-300 bg-clip-text text-transparent">Hello Wanda</span>
@@ -239,16 +238,16 @@
     <div class="mt-64 p-2 grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
       <h2 class="text-xl h-15 font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span class="self-center">Welcome gais</span></h2>
       <div class="text-lg h-15 font-bold text-slate-500 md:col-start-2 md:row-start-2 md:flex"><span class="self-end">Wanda Berlian Mardianti</span></div>
-      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-95 transition-all duration-500 md:aspect-[3/4] xl:aspect-[4/3]"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?cat')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
-      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-95 transition-all duration-500 md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?dog')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
-      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-95 transition-all duration-500 md:aspect-[3/4] xl:aspect-[4/3]"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?elephant')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
-      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-95 transition-all duration-500 md:aspect-[3/4] xl:aspect-[4/3]"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?bird')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
-      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-95 transition-all duration-500 md:aspect-[3/4] xl:aspect-[4/3]"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?fish')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
-      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-95 transition-all duration-500 md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?bunny')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
-      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-95 transition-all duration-500 md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?lion')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
-      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-95 transition-all duration-500 md:aspect-[3/4] xl:aspect-[4/3]"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?cheetah')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
-      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-95 transition-all duration-500 md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?cat')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
-      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-95 transition-all duration-500 md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?fish')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
+      <div class="grid-card group h-15"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?cat')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
+      <div class="grid-card group h-15 md:col-start-3"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?dog')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
+      <div class="grid-card group h-15"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?elephant')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
+      <div class="grid-card group h-15"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?bird')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
+      <div class="grid-card group h-15"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?fish')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
+      <div class="grid-card group h-15 md:col-start-2"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?bunny')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
+      <div class="grid-card group h-15 md:col-start-4"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?lion')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
+      <div class="grid-card group h-15"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?cheetah')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
+      <div class="grid-card group h-15 md:col-start-3"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?cat')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
+      <div class="grid-card group h-15 md:col-start-3"><div class="w-full h-full bg-[url('https://source.unsplash.com/300x200?fish')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div></div>
     </div>
 
     <div class="mb-96"></div>
